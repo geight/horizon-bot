@@ -1,0 +1,16 @@
+{
+  "name": "HorizonBot",
+  "description": "Discord bot to store and retrieve per-user Animal Crossing:New Horizons island states.",
+  "version": "0.1.0",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^6.0.1",
+    "discord": "^0.8.2",
+    "discord.js": "^12.1.1",
+    "enmap": "^5.2.4",
+    "request": "^2.88.2"
+  }
+}
