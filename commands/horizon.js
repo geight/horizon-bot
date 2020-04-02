@@ -63,7 +63,7 @@ module.exports = {
 
                 const embed = new Discord.MessageEmbed()
                     .setTitle(`Item and value list for ` + month + `-` + date + `-` + year)
-                    .setAuthor(client.user.username, client.user.avatarURL)
+                    .setAuthor(`${message.author.username}`, `${message.author.displayAvatarURL({ dynamic: true })}`)
                     .setDescription("List of daily hot items and turnip values for user islands.")
                     .setColor(0x00AE86);
                 
