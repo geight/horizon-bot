@@ -68,8 +68,8 @@ module.exports = {
                     .setColor(0x00AE86);
                 
                 filtered.forEach(data => {
-                    embed.addField(`Hot Items`, `${data.name}:\t ${data.item}`, inline=true);
-                    embed.addField(`Turnip Values`, `${data.name}:\t ${data.turnipValue}`, inline=true);
+                    embed.addField(`Hot Items`, `${message.author.displayAvatarURL({ dynamic: true })}:\t ${data.item}`, inline=true);
+                    embed.addField(`Turnip Values`, `${message.author.displayAvatarURL({ dynamic: true })}:\t ${data.turnipValue}`, inline=true);
                 });
 
                 message.channel.send({embed});
