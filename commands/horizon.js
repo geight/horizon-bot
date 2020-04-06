@@ -14,7 +14,7 @@ module.exports = {
         let value = args[1];
         
         switch(action) {
-            case "--item":
+            case "-item":
                 
                 client.horizon.ensure(key, {
                     user: message.author.id,
@@ -33,7 +33,7 @@ module.exports = {
                 message.channel.send(output);
         
                 break;
-            case "--turnip":
+            case "-turnip":
 
                 client.horizon.ensure(key, {
                     user: message.author.id,
@@ -52,7 +52,7 @@ module.exports = {
                 message.channel.send(output);
         
                 break;
-            case "--list":
+            case "-list":
                 const list = client.horizon.array().filter( p => p.guild === message.guild.id );
                 
                 var filtered = list.filter(function(x) {
@@ -74,7 +74,7 @@ module.exports = {
                 message.channel.send({embed});
                 break;
                 
-            case "--help":
+            case "-help":
                 var output = "";
                 output += ("```");
                 output += (`Supported commands:\n--item <itemName|item_name>\n--turnip <value>\n--list\n`)
