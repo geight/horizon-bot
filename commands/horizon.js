@@ -77,7 +77,7 @@ module.exports = {
             case "-help":
                 var output = "";
                 output += ("```");
-                output += (`Supported commands:\n--item <itemName|item_name>\n--turnip <value>\n--list\n`)
+                output += (`Supported commands:\n-item <itemName|item_name>\n-turnip <value>\n-list\n-help (this command)`)
                 output += ("```");
                 message.channel.send(output);
                 break;
